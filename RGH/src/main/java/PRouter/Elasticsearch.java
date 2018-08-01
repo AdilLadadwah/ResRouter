@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.concurrent.ExecutionException;
 
 //import org.elasticsearch.action.delete.DeleteResponse;
-/*import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
@@ -17,7 +17,7 @@ import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
-import org.elasticsearch.search.SearchHit;*/
+import org.elasticsearch.search.SearchHit;
 
 
 /**
@@ -35,7 +35,7 @@ public class Elasticsearch {
 	// Create Object of ElasticSearch and Client to perform ElasticSearch Operation
 
 	private static Elasticsearch elasticsearch;
-	//public Client client;
+	public Client client;
 
 	private Elasticsearch() {
 
@@ -63,7 +63,7 @@ public class Elasticsearch {
 	public void insert() throws IOException {
 
 		// Connect to server database ElasticSearch
-	/*	client = TransportClient.builder().build()
+		client = TransportClient.builder().build()
 				.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("localhost"), 9300));
 
 		// Create index and insert document information Router
@@ -75,11 +75,11 @@ public class Elasticsearch {
 				.field("ConfigRunning", RouterAPIs.getInstance().getConfigRunning())
 				.field("InterfaceIP", StrIP.substring(1, StrIP.length() - 1)).endObject()).get();
 
-		System.out.println(response);*/
+		System.out.println(response);
 
 	}
 
-/*	public SearchHit[] getData() throws IOException, InterruptedException, ExecutionException {
+	public SearchHit[] getData() throws IOException, InterruptedException, ExecutionException {
 
 		client = TransportClient.builder().build()
 				.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("localhost"), 9300));
@@ -90,11 +90,7 @@ public class Elasticsearch {
 
 		return hits;
 		
-		<dependency>
-			<groupId>org.elasticsearch</groupId>
-			<artifactId>elasticsearch</artifactId>
-			<version>2.3.3</version>
-		</dependency>
+	
 
-	}*/
+	}
 }

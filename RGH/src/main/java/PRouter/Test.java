@@ -1,13 +1,16 @@
 package PRouter;
 
-import java.io.IOException;
-import java.net.InetAddress;
+
 import java.net.UnknownHostException;
+
+/*import java.io.IOException;
+import java.net.InetAddress;
 import java.util.Date;
 import java.util.Map;
-import java.util.concurrent.ExecutionException;
-
-/*import org.elasticsearch.action.get.GetResponse;
+import java.util.concurrent.ExecutionException;*/
+/*
+ 
+import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.client.Client;
@@ -16,8 +19,8 @@ import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.index.query.QueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;*/
-
+import org.elasticsearch.index.query.QueryBuilders;
+*/
 public class Test {
 
 	public static void main(String[] args) throws UnknownHostException {
@@ -34,11 +37,12 @@ public class Test {
 		System.out.println(map.get("Interface IP"));
 		System.out.println(map.get("Show version"));
 		System.out.println(map.get("Install IOS version"));
-		System.out.println(map.get("Running Configuration"));*/
+		System.out.println(map.get("Running Configuration"));
 
 		/*
 		 * 
-		 * 		json2.put("HostName", "A"+Inter[0]);
+		 * 		
+		 json2.put("HostName", "A"+Inter[0]);
 		json2.put("Date", "B"+Inter[0]);
 		json2.put("Version", "C"+Inter[0]);
 		json2.put("ConfigRunning", "D"+Inter[0]);

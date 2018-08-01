@@ -6,6 +6,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
+
+import org.elasticsearch.search.SearchHit;
 //import org.elasticsearch.search.SearchHit;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -234,7 +236,7 @@ public class ServicApp {
 
 		// Insert object of Router and its informations on database
 		// Get Directly Informations from Router
-		//Elasticsearch.getInstance().insert();
+		  Elasticsearch.getInstance().insert();
 
 		return "The Insertion  Is Successfully";
 	}
